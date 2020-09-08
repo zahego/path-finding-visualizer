@@ -1,0 +1,16 @@
+.node{
+    border: 1px solid rgba(35, 55, 170, 0.247);
+    height:22px;
+    width:22px;
+}
+
+.start{
+    background-color: red;
+}
+.end{
+    background-color: green;
+}
+
+.wall{
+    background-color: grey;
+}

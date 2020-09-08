@@ -1,0 +1,11 @@
+.visualizer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position:relative;
+}
+.visualizer-row{
+    display: flex;
+    flex-direction: row;
+}
