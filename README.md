@@ -1,68 +1,90 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+## Path Finding Visualizer
+[https://path-finder-extreme.netlify.app/](https://path-finder-extreme.netlify.app/)  
+A visualizer of the path finding alforithms. This helps you visualize the algorithms better on how they approaches the end points from the start, given obstacles and dead-ends.
 
-In the project directory, you can run:
+## Motivation
+I want to showcase my experience with algorithms.
 
-### `yarn start`
+## Getting Started
+These instructions will guild you through the inital setting up process and 
+highlight what the apps can do for you to explore on your own.  
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+## Notable feature
+- Visualizer with animation for many path finding algorithms
+- Add walls and weighted nodes as obstacles
+- Maze generator (coming soon)
+- Running 2 algorithms at once as a race(coming soon)
 
-### `yarn test`
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Prequesite
+Nodejs installed for local running purpose    
+check out Node installation instruction [here](https://nodejs.org/en/)  
+Netlify set up if you would like to continuous deploy and host your own client side app
+check out Netlify instruction [here](https://www.netlify.com/)  
+Or you use any other hostin site, including github page (the site is static anyway)
 
-### `yarn build`
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Installing and Running
+Clone the repo
+```
+$ git clone https://github.com/zahego/path-finding-visualizer.git
+```
+Run Node command to create node_modules folder from the information in package.json, which hold all the necessary dependencies
+```
+$ npm install
+```
+Run Node command for local testing
+```
+$ npm start
+```
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+## Deploying on Netlify
+access the client folder  
+create a prouction build of the app
+```
+$ yarn build
+```
+install Netlify on your local repo
+```
+$ npm install netlify-cli -g
+```
+login to your Netlify account
+```
+$ netlify login
+```
+start the deploy process
+```
+$ netlify deploy
+```
+choose the option to Create and Config a new site  
+change the site name to your preference  
+set the deploy path to   
+```
+$ ./build
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `yarn eject`
+## What you can do
+- add walls 
+- add weighted notes (coming soon)
+- change algorithms (coming soon)
+- run the visualizer to see the animation of the algorithms.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Technologies stack
+- [React](https://reactjs.org/) - framework
+- [Sass] - css styling (coming soon)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
-## Learn More
+## Contributors
+Minh Tran, Anh Tran 
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## License
+This project is licensed under the MIT License
 
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `yarn build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+## Challenges and resolutions
+- using minheap (coming soon)
