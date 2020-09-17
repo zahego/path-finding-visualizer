@@ -2,6 +2,8 @@ import React from 'react';
 import Node from '../Node/Node';
 import * as D from '../../Algorithms/Dijkstra';
 import '../../Styles/Visualizer.css';
+import Navbar from '../Navbar'
+import '../../Styles/Navbar.css'
 
 const numRow = 15;
 const numCol = 50;
@@ -76,12 +78,15 @@ export default class Visualizer extends React.Component {
         this.animateDijkstra(visitedNodesInOrder, nodesInShortestPathOrder);
         //this.setState({ nodes: this.state.nodes });
     }
+    
+    
+
     render() {
         return (
+            
             <div className='visualizer'>
-                <button onClick={() => this.visualizeDijkstra()}>
-                    Visualize Dijkstra's Algorithm
-                </button>
+               <Navbar visualizeDijkstra={this.visualizeDijkstra}/>
+                
                 <div className='visualizer-flex'>
                     {/*console.log(this.state.nodes[7])*/}
                     {this.state.nodes.map((node, index) =>
@@ -106,6 +111,7 @@ export default class Visualizer extends React.Component {
         )
     }
 }
+
 
 
 
@@ -142,5 +148,6 @@ const wallToggle = ({ grid, row, col }) => {
     newGrid[row][col] = node;
     return newGrid;
 }
+
 
 
